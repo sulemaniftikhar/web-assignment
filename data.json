@@ -1,0 +1,24 @@
+{
+  "features": [
+    {
+      "title": "Real-Time Messaging",
+      "description": "Instantly send and receive messages without refreshing the page.",
+      "icon": "fa-solid fa-message"
+    },
+    {
+      "title": "Private & Group Chats",
+      "description": "Communicate one-on-one or with multiple people in group chats.",
+      "icon": "fa-solid fa-user-group"
+    },
+    {
+      "title": "File & Media Sharing",
+      "description": "Share images, videos, and documents with ease.",
+      "icon": "fa-solid fa-file"
+    },
+    {
+      "title": "End-to-End Encryption",
+      "description": "Your conversations are secure and private at all times.",
+      "icon": "fa-solid fa-lock"
+    }
+  ]
+}

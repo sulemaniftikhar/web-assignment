@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Login Page</title>
+    <link rel="icon" type="image/x-icon" href="./images/fav.png">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="login-signup.css">
+    <link rel="stylesheet" href="anime.css">
+</head>
+
+<body>
+    <main class="auth-page">
+
+        <div class="container">
+            <div class="auth-card">
+                <div class="row g-0">
+
+                    <div class="col-md-6 left-side">
+                        <div class="left-top">
+                            <!-- Content that takes 75% height -->
+                            <a href="#" class="back-button"><i class="bi bi-chevron-left"></i> Back</a>
+
+                            <h1>QuickCHAT</h1>
+                            <br>
+                            <div class="typed-container">
+                                <span id="typed-output"></span>
+                            </div>
+                        </div>
+
+                        <div class="left-bottom">
+                            <!-- Content that takes 25% height -->
+                            <p>Footer or extra content here</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Right side with form -->
+                    <div class="col-md-6 right-side">
+                        <div class="form-header">
+                            <a href="#" class="login-link" id="toggle-form">Log In <i
+                                    class="bi bi-chevron-right"></i></a>
+                        </div>
+
+                        <div class="form-container">
+                            <!-- Login Form (Hidden by default) -->
+                            <form id="login-form" class="needs-validation d-none">
+                                <h2>LOG IN</h2>
+
+                                <div class="mb-4">
+                                    <input type="email" class="form-control custom-input" id="login-email" name="email"
+                                        placeholder="E-mail" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="password" class="form-control custom-input" id="login-password"
+                                        name="password" placeholder="Password" required>
+                                </div>
+
+                                <div class="mb-4 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMeLogin"
+                                        name="rememberMe">
+                                    <label class="form-check-label" for="rememberMeLogin">Remember Me</label>
+                                </div>
+
+                                <div class="d-grid gap-2 mb-3">
+                                    <button type="submit" class="btn btn-gradient" id="login-button">
+                                        Log In
+                                    </button>
+                                </div>
+
+                                <div class="text-center">
+                                    <a href="#" class="forgot-link">Forgot password?</a>
+                                </div>
+                            </form>
+
+                            <!-- Sign Up Form -->
+                            <form id="signup-form" class="needs-validation">
+                                <h2>CREATE AN ACCOUNT</h2>
+
+                                <div class="mb-3">
+                                    <input type="text" class="form-control custom-input" id="first-name"
+                                        name="first_name" placeholder="First Name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="text" class="form-control custom-input" id="last-name" name="last_name"
+                                        placeholder="Last Name">
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="email" class="form-control custom-input" id="signup-email" name="email"
+                                        placeholder="Email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="password" class="form-control custom-input" id="signup-password"
+                                        name="password" placeholder="Password" required>
+                                </div>
+
+                                <div class="mb-4">
+                                    <input type="password" class="form-control custom-input" id="confirm-password"
+                                        name="confirm_password" placeholder="Confirm Password" required>
+                                </div>
+
+                                <div class="mb-4 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMeSignup"
+                                        name="rememberMe">
+                                    <label class="form-check-label" for="rememberMeSignup">Remember Me</label>
+                                </div>
+
+                                <div class="d-grid gap-2 mb-3">
+                                    <button type="submit" class="btn btn-gradient" id="signup-button">
+                                        Get Connecting Now
+                                    </button>
+                                </div>
+
+                                <div class="text-center">
+                                    <a href="#" class="forgot-link">Forgot password?</a>
+                                </div>
+
+                                <div class="terms-text">
+                                    By signing up you agree<br>
+                                    <a href="#">Terms & Conditions</a> and <a href="#">Current Policy</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom JS -->
+    <script src="login-signup.js"></script>
+</body>
+
+</html>

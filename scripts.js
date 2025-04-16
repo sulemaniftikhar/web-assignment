@@ -95,3 +95,24 @@ addEventListener("keypress", (e) => {
         }
     }
 });
+
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        const container = document.getElementById('feature-cards');
+        data.features.forEach(feature => {
+            const card = document.createElement('div');
+            card.className = 'col-12 col-sm-6';
+            card.innerHTML = `
+          <div class="card border-0 border-bottom border-primary shadow-sm">
+            <div class="card-body text-center p-4 p-xxl-5">
+              <i class="${feature.icon} fa-3x pt-3 pb-4"></i>
+              <h4 class="mb-4">${feature.title}</h4>
+              <p class="mb-4 text-secondary">${feature.description}</p>
+            </div>
+          </div>
+        `;
+            container.appendChild(card);
+        });
+    })
+    .catch(err => console.error('Failed to load features:', err));

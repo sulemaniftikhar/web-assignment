@@ -1,0 +1,259 @@
+/* Main background and layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.auth-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: lightgray;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+/* Auth card */
+.auth-card {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 15px 15px 30px rgba(9, 9, 9, 0.4);
+    margin: 0 15px;
+}
+
+/* Left side with image */
+.left-side {
+    background: linear-gradient(135deg, #a5b4fc, #60a5fa, #38bdf8, #7dd3fc);
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    /* COMMENT: Replace this URL with your abstract gradient image URL */
+    /* background-image: url('images/chat-login.avif'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.left-side {
+    background: linear-gradient(135deg, #a5b4fc, #60a5fa, #38bdf8, #7dd3fc);
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+}
+
+/* First inner box: 75% height */
+.left-top {
+    flex: 3;
+    /* 75% of total (3 out of 4 parts) */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* just for visibility */
+    padding: 1rem;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 15px 0px 30px rgba(9, 9, 9, 0.2);
+}
+
+/* Second inner box: 25% height */
+.left-bottom {
+    flex: 1;
+    /* 25% of total (1 out of 4 parts) */
+    background-color: rgba(0, 0, 0, 0.1);
+    /* just for visibility */
+    padding: 1rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 15px 15px 30px rgba(9, 9, 9, 0.2);
+}
+
+.back-button {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+    color: white;
+}
+
+/* Right side with form */
+.right-side {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+}
+
+.login-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.login-link:hover {
+    color: #6366f1;
+}
+
+/* Form styles */
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.custom-input {
+    height: 55px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.custom-input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    margin-top: 0.2rem;
+}
+
+.form-check-label {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* Button styles */
+.btn-gradient {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, #0ea5e9, #6366f1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.btn-gradient:active {
+    transform: translateY(0);
+}
+
+/* Links */
+.forgot-link {
+    color: #64748b;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.forgot-link:hover {
+    color: #6366f1;
+}
+
+/* Terms text */
+.terms-text {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+
+.terms-text a {
+    color: #64748b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.terms-text a:hover {
+    color: #6366f1;
+}
+
+/* Form animations */
+.form-transition-out {
+    animation: fadeOut 0.4s ease forwards;
+}
+
+.form-transition-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .left-side {
+        min-height: 200px;
+    }
+
+    .auth-card {
+        margin: 0 1rem;
+    }
+
+    .right-side {
+        padding: 1.5rem;
+    }
+}
